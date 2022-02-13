@@ -30,6 +30,8 @@
   letter-spacing: 0.03em;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
@@ -90,8 +92,13 @@ a {
 .hero-section {
   background-color: #2f303a;
   height: 600px;
+  text-align: center;
+  margin-bottom: 94px;
 }
 .hero-section-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -99,7 +106,6 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
-  padding: 200px 450px 20px 450px;
 }
 
 /* Кнопака */
@@ -111,6 +117,10 @@ a {
   background-color: var(--button-primary-color);
   color: var(--secondary-text-color);
   border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  padding: 6px 22px;
+  border: 1px solid transparent;
 }
 
 .button.primary:focus,
@@ -131,10 +141,17 @@ a {
   background-color: var(--accent-color);
   margin: auto;
   border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
 }
 
 /* Преимущества компании */
+.company-advantages {
+  margin-bottom: 94px;
+}
+
 .company-advantages .title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
