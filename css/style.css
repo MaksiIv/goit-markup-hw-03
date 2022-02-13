@@ -1,0 +1,203 @@
+/* Основной фон #ffffff  */
+/* Вторичный фон #2f303a */
+/* Вторичный цвет текста #212121 */
+/* Основной цвет текста #757575 */
+/* Акцент #2196f3 */
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-primary-color: #f5f4fa;
+  --primary-bg-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  background-color: var(--primary-bg-color);
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*  Логотип компании */
+.company-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+/* Навигация и контакты шапки */
+.header-contacts-list,
+.nav-header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.accent {
+  color: var(--accent-color);
+}
+
+.nav-header .current {
+  color: var(--accent-color);
+}
+
+/* Эффект ховер и фокус для ссылок */
+.company-logo:hover,
+.company-logo:focus,
+.nav-header-list:hover,
+.nav-header-list:focus,
+.header-contacts:hover,
+.header-contacts:focus,
+.header-contacts-list:hover,
+.header-contacts-list:focus,
+.order-button:focus,
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--accent-color);
+}
+
+/* Секция Герой */
+.hero-section {
+  background-color: #2f303a;
+  height: 600px;
+}
+.hero-section-header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+  padding: 200px 450px 20px 450px;
+}
+
+/* Кнопака */
+.button {
+  color: var(--button-primary-color);
+}
+
+.button.primary {
+  background-color: var(--button-primary-color);
+  color: var(--secondary-text-color);
+}
+
+.button.primary:focus,
+.button.primary:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+.order-button.secondary {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  margin: auto;
+}
+
+/* Преимущества компании */
+.company-advantages .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.company-advantages-item {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+/* Наша команда и примеры работ */
+.work-examples,
+.our-team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.our-team {
+  background: #f5f4fa;
+}
+
+.our-team-header-list {
+  background-color: var(--primary-bg-color);
+}
+
+.our-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.our-team-job-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* Портфолио */
+.section-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.section-article {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+
+/* Подвал */
+.footer {
+  background-color: #2f303a;
+  height: 252px;
+}
+.footer-logo-section {
+  padding: 60px 0 20px 215px;
+}
+.footer-address-section {
+  padding: 0px 0 60px 215px;
+}
+.footer-logo {
+  font-family: Raleway;
+  font-weight: 700d;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-bg-color);
+}
+
+.footer-address {
+  font-style: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-bg-color);
+}
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
