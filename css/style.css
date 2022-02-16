@@ -16,12 +16,6 @@
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 .body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -33,7 +27,9 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
 }
+
 .link {
   text-decoration: none;
 }
@@ -44,7 +40,7 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -56,6 +52,8 @@ a {
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
+  margin-right: 94px;
+  align-self: center;
 }
 
 /* Навигация и контакты шапки */
@@ -73,6 +71,34 @@ a {
 
 .nav-header .current {
   color: var(--accent-color);
+}
+
+.nav-header {
+  display: flex;
+}
+
+.list .nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.list .nav-header-list {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-contacts .header-contacts-item + .header-contacts-item {
+  margin-left: 50px;
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+/* Main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Эффект ховер и фокус для ссылок */
