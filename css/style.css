@@ -303,9 +303,6 @@ a {
 .footer-logo-section {
   padding-top: 60px;
 }
-.footer-address-section {
-  padding-top: 20px;
-}
 
 .footer-logo {
   font-family: Raleway;
@@ -320,7 +317,13 @@ a {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-bg-color);
+  padding-top: 20px;
 }
+
+.footer-address-item {
+  color: var(--primary-bg-color);
+}
+
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
 }
