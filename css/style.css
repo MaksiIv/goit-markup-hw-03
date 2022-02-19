@@ -52,6 +52,11 @@ a {
   padding-right: 15px;
 }
 
+/* Заголовок */
+.header {
+  border-bottom: solid #ececec;
+}
+
 /*  Логотип компании */
 .company-logo {
   font-family: Raleway;
@@ -267,6 +272,8 @@ a {
 .btn {
   margin-top: 0;
   margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-section {
