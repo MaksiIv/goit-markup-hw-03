@@ -151,6 +151,7 @@ img {
 /* Кнопка */
 .button {
   color: var(--button-primary-color);
+  border: 1px solid transparent;
 }
 
 .button.primary {
@@ -160,8 +161,13 @@ img {
   text-align: center;
   align-items: center;
   padding: 6px 22px;
-  border: 1px solid transparent;
+   
 }
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 
 .button.primary:focus,
 .button.primary:hover {
@@ -169,20 +175,18 @@ img {
   color: var(--primary-bg-color);
 }
 
-.order-button.secondary {
+.button.secondary {
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
   margin: auto;
   border-radius: 4px;
   padding: 10px 32px;
-  border: 1px solid transparent;
+  
 }
 
 /* Преимущества компании */
@@ -191,7 +195,7 @@ img {
   
 }
 
-.advantages {
+.advantages-section {
   background-color: yellowgreen;
 }
 
@@ -221,7 +225,7 @@ margin-right: 30px;
 
 /* Наша команда и примеры работ */
 
-.work {
+.work-section {
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: aqua;
@@ -251,12 +255,13 @@ margin-right: 30px;
   text-align: center;
 }
 
-.our-team {
+.our-team-section {
   background: #f5f4fa;
 }
 
 .our-team-header-list {
   background-color: var(--primary-bg-color);
+  border-radius: 4px;
 }
 .team {
   padding-bottom: 94px;
@@ -282,8 +287,9 @@ margin-right: 30px;
   color: var(--primary-text-color);
 }
 
-/* Портфолио */
+/* Страница Портфолио */
 
+/* Секция фильтр */
 .btn {
   margin-top: 0;
   margin-bottom: 34px;
@@ -291,6 +297,7 @@ margin-right: 30px;
   justify-content: center;
 }
 
+/* Секция портфолио */
 .portfolio-section {
   margin-top: 0;
   margin-bottom: 94px;
