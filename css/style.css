@@ -18,7 +18,7 @@
 
 .body {
   font-family: 'Roboto', sans-serif;
-    background-color: var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
   margin: 0;
@@ -28,7 +28,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
+  
 }
 
 .link {
@@ -88,11 +88,17 @@ img {
   display: flex;
 }
 
-.list .nav-item:not(:last-child) {
+.nav-list,
+.advantages-list,
+.work-list {
+  display: flex;
+}
+
+.nav-list .nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.list .nav-header-list,
+.nav-list .nav-header-list,
 .header-contacts-list  {
   display: block;
   padding-top: 32px;
@@ -104,6 +110,7 @@ img {
 }
 
 .header-contacts {
+  display: flex;
   margin-left: auto;
 }
 
@@ -164,10 +171,6 @@ img {
    
 }
 
-.btn-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 
 .button.primary:focus,
 .button.primary:hover {
@@ -191,13 +194,18 @@ img {
 
 /* Преимущества компании */
 .company-advantages {
- padding-top: 94px;
+ padding-top: 107px;
   
 }
 
 .advantages-section {
   background-color: yellowgreen;
 }
+
+.advantages-item {
+  width: 270px;
+}
+
 
 .list .advantages-item:not(:last-child) {
 margin-right: 30px;
@@ -218,7 +226,10 @@ margin-right: 30px;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-left: 1px;
   color: var(--primary-text-color);
+  
 }
 
 
@@ -264,6 +275,7 @@ margin-right: 30px;
   border-radius: 4px;
 }
 .team {
+  display: flex;
   padding-bottom: 94px;
 }
 
@@ -291,13 +303,18 @@ margin-right: 30px;
 
 /* Секция фильтр */
 .btn {
+  padding-top: 94px;
   margin-top: 0;
   margin-bottom: 34px;
   display: flex;
   justify-content: center;
 }
 
-/* Секция портфолио */
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Список портфолио */
 .portfolio-section {
   margin-top: 0;
   margin-bottom: 94px;
