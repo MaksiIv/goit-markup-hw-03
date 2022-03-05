@@ -13,7 +13,7 @@
   --portfolio-item-gap: 30px;
 }
 
-.html {
+html {
   box-sizing: border-box;
 }
 
@@ -22,7 +22,7 @@
 *::after {
    box-sizing: border-box; */
 
-.body {
+body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--secondary-text-color);
@@ -34,7 +34,6 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  
 }
 
 .link {
@@ -72,7 +71,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
-  }
+}
 
 /* Навигация и контакты шапки */
 
@@ -114,7 +113,7 @@ img {
 }
 
 .nav-list .nav-header-list,
-.header-contacts-list  {
+.header-contacts-list {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -162,14 +161,11 @@ img {
   padding-bottom: 200px;
 
   background-color: #2f303a;
-  
-  
 }
 .hero-section-header {
   margin-top: 0;
   margin-bottom: 30px;
-  
-  
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -187,7 +183,7 @@ img {
 
 .button.primary {
   padding: 6px 22px;
-  
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -197,11 +193,9 @@ img {
 
   background-color: var(--button-primary-color);
   color: var(--secondary-text-color);
-  
-  border-radius: 4px;
-  
-  }
 
+  border-radius: 4px;
+}
 
 .button.primary:focus,
 .button.primary:hover {
@@ -213,7 +207,7 @@ img {
   margin: auto;
   border-radius: 4px;
   padding: 10px 32px;
-  
+
   font-family: Roboto;
   font-style: normal;
   display: flex;
@@ -225,7 +219,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  }
+}
 
 /* Преимущества компании */
 /* .company-advantages {
@@ -234,25 +228,21 @@ img {
 } */
 
 .advantages-section {
-  padding-top: 107px;
-  
-  background-color: yellowgreen;
+  padding-top: 94px;
 }
 
 .advantages-item {
   width: 270px;
 }
 
-
 .list .advantages-item:not(:last-child) {
-margin-right: 30px;
+  margin-right: 30px;
 }
-
 
 .company-advantages .title {
   margin-top: 0;
   margin-bottom: 10px;
-  
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -262,28 +252,23 @@ margin-right: 30px;
 .company-advantages-item {
   margin-top: 0;
   margin-bottom: 0;
-  
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  
 }
-
-
 
 /* Наша команда и примеры работ */
 
 .work-section {
   padding-bottom: 94px;
   padding-top: 94px;
-  
-  background-color: aqua;
 }
 
 .work-examples {
   margin-top: 0;
-  
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -291,15 +276,14 @@ margin-right: 30px;
 }
 
 .list .work-item:not(:last-child),
-.our-team-header-list:not(:last-child)
- {
+.our-team-header-list:not(:last-child) {
   margin-right: 30px;
 }
 
 .our-team-header {
   margin-top: 0;
   margin-bottom: 50px;
-    
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -319,30 +303,32 @@ margin-right: 30px;
 }
 .team {
   display: flex;
-  
 }
 
 .our-team-name {
-  margin: 0;
-  
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-top: 30px;
-  
 }
 
 .our-team-job-position {
-  padding-top: 10px;
-  padding-bottom: 30px;
-  margin:auto
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
+}
+
+.our-team-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Страница Портфолио */
@@ -352,8 +338,7 @@ margin-right: 30px;
   display: flex;
   justify-content: center;
   margin-top: 0;
-  margin-bottom: 34px;
-  
+  margin-bottom: 50px;
 }
 
 .btn-item:not(:last-child) {
@@ -369,13 +354,11 @@ margin-right: 30px;
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc( -1 * var(--portfolio-item-gap));
-  margin-top: calc( -1 * var(--portfolio-item-gap));
+  margin-left: calc(-1 * var(--portfolio-item-gap));
+  margin-top: calc(-1 * var(--portfolio-item-gap));
 }
 
 .section-title {
-  padding-left: 24px;
-  padding-top: 20px;
   margin: 0;
 
   font-weight: 700;
@@ -383,18 +366,14 @@ margin-right: 30px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
-  
 }
 
 .section-article {
-  padding-left: 24px;
-  padding-bottom: 20px;
   margin: 0;
-  
+
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
-  
 }
 
 .portfolio-item {
@@ -404,16 +383,17 @@ margin-right: 30px;
   margin-left: var(--portfolio-item-gap);
   margin-top: var(--portfolio-item-gap);
   flex-basis: calc(100% / 3 -var(--portfolio-item-gap));
-  
+
   color: #eeeeee;
-  
-  
 }
 
 .border {
-border: 1px solid #eeeeee;
-}
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 
+  border: 1px solid #eeeeee;
+}
 
 /* .portfolio-item:nth-child(3n) {
   margin-right: 0;
@@ -427,10 +407,12 @@ border: 1px solid #eeeeee;
 .footer {
   background-color: #2f303a;
   height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo-section {
-  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .footer-logo {
@@ -442,13 +424,14 @@ border: 1px solid #eeeeee;
 }
 
 .footer-address {
-  padding-top: 20px;
-  
   font-style: inherit;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-bg-color);
-  
+}
+
+.footer-address-list {
+  margin-bottom: 9px;
 }
 
 .footer-address-item {
